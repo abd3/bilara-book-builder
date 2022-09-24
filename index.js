@@ -1,5 +1,5 @@
 import buildSutta from "./buildSutta.js";
-import { books } from "./books.js";
+import { books } from "./books_leejp.js";
 import optionSettings from "./optionSettings.js";
 import buildTitlePage from "./buildTitlePage.js";
 
@@ -47,7 +47,7 @@ function makeTheBook() {
   buildTitlePage(slug, translator);
 
   bookContents.forEach(article => {
-    if (/chapter/.test(article) || /section/.test(article)) {
+    if (/chapter/.test(article) || /section/.test(article) || /condensation/.test(article)) {
       // this detects when there is a chapter title page that must be created
       let [id, paliTitle, englishTitle] = article.split("|");
       suttaTable.innerHTML += `<article id="${id}">

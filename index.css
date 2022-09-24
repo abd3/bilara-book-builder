@@ -32,8 +32,7 @@ button {
   row-gap: 0.5rem;
 }
 
-#row-two {
-}
+#row-two {}
 
 #progress-outer {
   width: 100px;
@@ -48,6 +47,7 @@ button {
   height: 23px;
   padding: 2px 0px 0px 0px;
 }
+
 #progress-label {
   padding: 2px 0px 0px 4px;
 }
@@ -55,16 +55,20 @@ button {
 .blink {
   animation: blinker 2s linear infinite;
 }
+
 @keyframes blinker {
   0% {
     opacity: 1;
   }
+
   45% {
     opacity: 0;
   }
+
   55% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -75,7 +79,7 @@ h2 {
   font-weight: normal;
 }
 
-h1:before {
+/* h1:before {
   content: "<h1>";
   font-size: 1rem;
 }
@@ -98,7 +102,7 @@ h5:before {
 h6:before {
   content: "<h6>";
   font-size: 1rem;
-}
+} */
 
 h1.section {
   text-align: center;
@@ -127,9 +131,11 @@ header ul {
 .hide-content ol {
   display: none;
 }
+
 .hide-content span {
   display: inline !important;
 }
+
 .hide-content h1,
 .hide-content h2,
 .hide-content h3,
@@ -144,18 +150,22 @@ header ul {
 .hide-content h2 {
   margin-left: 1rem;
 }
+
 .hide-content h3 {
   margin-left: 2rem;
   color: gray;
 }
+
 .hide-content h4 {
   margin-left: 3rem;
   color: gray;
 }
+
 .hide-content h5 {
   margin-left: 4rem;
   color: gray;
 }
+
 .hide-content h6 {
   margin-left: 5rem;
   color: gray;
@@ -174,6 +184,7 @@ span.pli-lang {
   display: block;
   font-weight: bold;
 }
+
 span.eng-lang {
   display: block;
 }
@@ -182,6 +193,7 @@ p.pli-verse {
   margin-bottom: 0.3rem;
   margin-left: 1rem;
 }
+
 p.eng-verse {
   margin-bottom: 1rem;
   margin-top: 0rem;
